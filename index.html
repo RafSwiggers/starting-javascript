@@ -415,41 +415,42 @@
                 <br/>
                 <p>Enter your name here.</p>
                 <div id="target"></div>
+                <div class="sliderContainer"></div>
                 <input type="text" class="mb-3">
-                <div class="slidecontainer">
-                </div>
             </div>
-            <script>
-                var slider = document.createElement("input")
-
-                slider.type = 'range';
-
-                myRange = document.getElementById('myRange')
-                alphabet = 'abcdefghijklmnopqrstuvwxyz';
-
-
-                function rangeChange() {
-                    document.getElementById("valuespan").innerHTML = alphabet[myRange.value];
-                }
-            </script>
         </div>
-        <!-- END OF Part 7 -->
+        <script>
+            var targetContainer = document.getElementsByClassName("sliderContainer");
+            targetContainer[0].innerHTML = "<input type ='range'>";
 
-        <!-- Part 8: Name selector2 -->
-        <div class="row">
-            <div class="col-12 bg-white shadow-sm p-4 mx-auto mt-4">
-                <h3>Part 8: Sliiiiiders again</h3>
-                <p>Put the exercise of above here again. They should both keep working. And you should only write one more line. In other words you cannot hard code ids 😉 If needed, rewrite the above code.</p>
-                <hr/>
-                <br/>
 
-                <div id="target2"></div>
-            </div>
-            <script>
-                // You can put at most one line here
-            </script>
+
+            myRange = document.getElementById('myRange')
+            alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+
+            function rangeChange() {
+                document.getElementById("valuespan").innerHTML = alphabet[myRange.value];
+            }
+        </script>
+    </div>
+    <!-- END OF Part 7 -->
+
+    <!-- Part 8: Name selector2 -->
+    <div class="row">
+        <div class="col-12 bg-white shadow-sm p-4 mx-auto mt-4">
+            <h3>Part 8: Sliiiiiders again</h3>
+            <p>Put the exercise of above here again. They should both keep working. And you should only write one more line. In other words you cannot hard code ids 😉 If needed, rewrite the above code.</p>
+            <hr/>
+            <br/>
+
+            <div id="target2"></div>
         </div>
-        <!-- END OF Part 8 -->
+        <script>
+            // You can put at most one line here
+        </script>
+    </div>
+    <!-- END OF Part 8 -->
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
