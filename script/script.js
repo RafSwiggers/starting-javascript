@@ -29,7 +29,7 @@ menu.addEventListener("keydown", function(e) {
         }
     }
 });
-document.getElementById("launchMe").addEventListener("click", listmaker());
+/*document.getElementById("launchMe").addEventListener("click", listmaker());
 
 function listmaker() {
     let p = document.getElementById('listHolder');
@@ -41,9 +41,47 @@ function listmaker() {
     // put ul in p
     p.appendChild(ul);
     //creat 4 li 
-    for (let i = 0; i <= span.length - 1; i++) {
+    for (let i = 0; i <= span.length; i++) {
         let newLi = document.createElement('li');
         ul.appendChild(newLi);
         newLi.appendChild(span[i]);
     }
+}
+
+var elem = document.getElementById("moveAnimation");
+var pos = 0;
+var id = setInterval(frame, 20);
+
+function frame() {
+    if (pos == 100) {
+        clearInterval(id);
+        id2 = setInterval(frameback, 50);
+    } else {
+        pos++;
+        elem.style.left = pos + '%';
+    }
+}
+
+function frameback() {
+    if (pos == 0) {
+        clearInterval(id2);
+        setInterval(frame, 20);
+    } else {
+        pos--;
+        elem.style.left = pos + '%';
+    }
+} */
+
+
+window.onload = function() {
+    var bsDiv = document.getElementById("followMouse");
+    var x, y;
+    // On mousemove use event.clientX and event.clientY to set the location of the div to the location of the cursor:
+    window.addEventListener('mousemove', function(event) {
+        x = event.clientX;
+        y = event.clientY;
+        if (typeof x !== 'undefined') {
+            bsDiv.style.left = x + "px";
+        }
+    }, false);
 }

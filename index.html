@@ -381,7 +381,6 @@
                 <p>Below this, you have a div that needs to move left to right using JS for the motion. Make it reach the end in 2 seconds, then return in 5s. Repeat that forever.</p>
                 <hr>
                 <br>
-
                 <div id="moveAnimation" class="block"></div>
             </div>
             <script>
@@ -414,11 +413,24 @@
                 <img src="../input.gif" alt="Interface" />
                 <hr/>
                 <br/>
-
+                <p>Enter your name here.</p>
                 <div id="target"></div>
+                <input type="text" class="mb-3">
+                <div class="slidecontainer">
+                </div>
             </div>
             <script>
-                // Write your code here
+                var slider = document.createElement("input")
+
+                slider.type = 'range';
+
+                myRange = document.getElementById('myRange')
+                alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+
+                function rangeChange() {
+                    document.getElementById("valuespan").innerHTML = alphabet[myRange.value];
+                }
             </script>
         </div>
         <!-- END OF Part 7 -->
