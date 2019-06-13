@@ -29,48 +29,8 @@ menu.addEventListener("keydown", function(e) {
         }
     }
 });
-/*document.getElementById("launchMe").addEventListener("click", listmaker());
 
-function listmaker() {
-    let p = document.getElementById('listHolder');
-    let span = document.getElementById('listHolder').children;
-    console.log(span);
-    //let newList = span.map(creatLi);
-    //creat ul
-    let ul = document.createElement('ul');
-    // put ul in p
-    p.appendChild(ul);
-    //creat 4 li 
-    for (let i = 0; i <= span.length; i++) {
-        let newLi = document.createElement('li');
-        ul.appendChild(newLi);
-        newLi.appendChild(span[i]);
-    }
-}
 
-var elem = document.getElementById("moveAnimation");
-var pos = 0;
-var id = setInterval(frame, 20);
-
-function frame() {
-    if (pos == 100) {
-        clearInterval(id);
-        id2 = setInterval(frameback, 50);
-    } else {
-        pos++;
-        elem.style.left = pos + '%';
-    }
-}
-
-function frameback() {
-    if (pos == 0) {
-        clearInterval(id2);
-        setInterval(frame, 20);
-    } else {
-        pos--;
-        elem.style.left = pos + '%';
-    }
-} */
 
 
 window.onload = function() {
